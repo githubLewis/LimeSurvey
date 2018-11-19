@@ -89,7 +89,7 @@ class GlobalSettings extends Survey_Common_Action
         $content = '';
         if (SendEmailMessage($body, $sSubject, $sTo, $sFrom, $sSiteName, false, $sSiteAdminBounce)) {
             //$content .= Yii::app()->getController()->_showMessageBox(gT('Email sending success'), gT('Email sent successfully'), null, true);
-            $content .= gT('Email sending success: ') .gT('Email sent successfully');
+            $content .= gT('Email sent successfully');
         } else {
             //$content .= Yii::app()->getController()->_showMessageBox(gT('Email sending failure'), $maildebug, null, true);
             $content .= gT('Email sending failure: ') .$maildebug;
